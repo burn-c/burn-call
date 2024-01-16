@@ -55,7 +55,8 @@ export async function getGoogleOAuthToken(userId: string) {
     auth.setCredentials({
       access_token,
       refresh_token,
-      expiry_date: account.expires_at,
+      expiry_date
+      // expiry_date: account.expires_at,
     });
   }
 
